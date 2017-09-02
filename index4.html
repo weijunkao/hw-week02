@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="css4.css">
+    <script src="jquery-3.2.1.js">
+        
+//        https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+</script>
+
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+<input type="button" value="重新開始" id="restart">
+<div class="go-board">
+  <div class="row r1">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r2">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r3">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r4">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r5">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r6">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r7">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r8">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+  <div class="row r9">
+    <div class="col c1"></div>
+    <div class="col c2"></div>
+    <div class="col c3"></div>
+    <div class="col c4"></div>
+    <div class="col c5"></div>
+    <div class="col c6"></div>
+    <div class="col c7"></div>
+    <div class="col c8"></div>
+    <div class="col c9"></div>
+  </div>
+</div>
+<div class="hint"></div>
+<link rel="stylesheet" href="https://kevinljw.github.io/pic-pool/board.css">
+
+
+
+<script>
+$().ready(function(){
+  var color = "white";
+  $(".col").css("opacity","0");
+  $(".hint").text("現在該"+color+"下");
+  
+  $(".col").click(function(){
+    $(this).css("opacity","1");
+    $(this).addClass(color);
+    if(color==="white"){
+      color="black";
+    }
+    else{
+      color="white";
+    }
+    $(".hint").text("現在該"+color+"下");
+  });
+  $("#restart").click(function(){
+    $(".col").css("opacity","0");
+    color = "white";
+     $(".hint").text("現在該"+color+"下");
+    $(".col").removeClass("white");
+    $(".col").removeClass("black");
+  });
+});
+ 
+
+    </script>
+
+
+
+
+</body>
+</html>
