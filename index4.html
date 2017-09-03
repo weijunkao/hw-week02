@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <title>Untitled Document</title>
     <link rel="stylesheet" href="css4.css">
-    <script src="jquery-3.2.1.js">
-        
-//        https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 </script>
 
 </head>
@@ -121,12 +120,12 @@
 
 
 <script>
-$().ready(function(){
-  var color = "white";
-  $(".col").css("opacity","0");
-  $(".hint").text("現在該"+color+"下");
+$(document).ready(function(){
+   var color = "white";
+   $(".col").css("opacity","0");
+   $(".hint").text("現在該"+color+"下");
   
-  $(".col").click(function(){
+   $(".col").click(function(){
     $(this).css("opacity","1");
     $(this).addClass(color);
     if(color==="white"){
@@ -148,6 +147,7 @@ $().ready(function(){
  
 
     </script>
+
 
 
 

@@ -1,0 +1,30 @@
+.person{
+    border: 10px solid transparent;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.person:hover{
+    border-color: rgba(128, 128, 128, 0.19); 
+}
+
+.carousel-inner img{
+    height: 500px !important;
+    width: 100%;
+}
+
+.bg-1{
+    background: #1c1c1c;
+}
+
+.bg-1 h3, .bg-1 p{
+    color: #fff;
+}
+
+.bg-1 h3{
+    padding-top: 40px;
+}
+
+.bg-1 p{
+    padding: 40px 0px;
+}

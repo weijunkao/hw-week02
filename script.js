@@ -9,6 +9,12 @@ function max(a,b){
     }
 }
 
+
+function lastChar(arr){
+    
+    return arr[arr.length-1];
+}
+
 function squares(a,b){
     return Math.pow(a,2)+Math.pow(b,2);
 }
